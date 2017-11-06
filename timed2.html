@@ -1,0 +1,37 @@
+<!doctype Html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <style media="screen">
+  .big{
+    -ms-transform: scale(2,3); /* IE 9 */
+    -webkit-transform: scale(2,3); /* Safari */
+    transform: scale(2,3); /* Standard syntax */
+    color: red;
+  }
+  #counter{
+    width: 30%;
+    text-align:center;
+    margin: 0px auto;
+  }
+  #count{
+    transition: all 0.4s ease;
+  }
+  </style>
+  <body>
+    <div id="counter">
+      <h2>Countdown Timer</h2>
+      <div class="" id="count">
+        <span id="showhr">00</span>:<span id="showmns">00</span>:<span id="showscs">00</span>
+      </div>
+    </div>
+    <audio data-key="68" src="tick.mp3"></audio>
+    <script type="text/javascript">
+      var cthr = 0;
+      var ctmnts = 0;
+      var ctsecs = 35;
+    </script>
+    <script src="richCount.js" type="text/javascript"></script>
+  </body>
+</html>
